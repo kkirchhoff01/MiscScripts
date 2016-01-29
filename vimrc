@@ -44,6 +44,9 @@ elseif &ft=='bash' || &ft=='shell' || &ft=='sh'
     inoremap <F4> <ESC>:!chmod +x %<CR>
     nnoremap <F5> :!./%<CR>
     inoremap <F5> <ESC>:!./%<CR>
+elseif &ft=='dot'
+    nnoremap <F5> :!dot -Tps % -o diagram.ps<CR>
+    inoremap <F5> <ESC>:!dot -Tps % -o diagram.ps<CR>
 endif
 
 " LaTeX commands
