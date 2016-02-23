@@ -10,6 +10,6 @@ avconv -i /tmp/$NAME.mp4 -vn -f mp3 ~/Music/$NAME.mp3    # Convert to mp3
 # Remove mp4 from downloads
 if [ -e /tmp/$NAME.mp4 ]
 then
-    echo "Removing ~/Downloads/$NAME.mp4"
+    echo "Removing /tmp/$NAME.mp4"
     rm /tmp/$NAME.mp4
 fi
