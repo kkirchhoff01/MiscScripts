@@ -18,7 +18,7 @@ class EdgeFinder:
 
         while not os.path.isfile(img_file):
             print('That is not a file')
-            img_file = os.path.join(img_path, raw_input('Enter file name: '))
+            img_file = os.path.join(self.img_path, raw_input('Enter file name: '))
 
         return img_file
 
