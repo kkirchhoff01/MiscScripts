@@ -39,6 +39,12 @@ filetype detect
 if &ft=='python'
     nnoremap <F5> :!python %<CR>
     inoremap <F5> <ESC>:!python %<CR>
+elseif &ft=='c'
+    nnoremap <F5> :!gcc % && ./a.out<CR>
+    inoremap <F5> <ESC>:!gcc % && ./outfile<CR>
+elseif &ft=='cpp' || &ft=='c++'
+    nnoremap <F5> :!g++ % && ./a.out<CR>
+    inoremap <F5> <ESC>:!g++ % && ./outfile<CR>
 elseif &ft=='bash' || &ft=='shell' || &ft=='sh'
     nnoremap <F4> :!chmod +x %<CR>
     inoremap <F4> <ESC>:!chmod +x %<CR>
